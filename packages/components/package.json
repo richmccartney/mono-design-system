@@ -1,0 +1,24 @@
+{
+  "name": "mono-test-components",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Richard McCartney <richard@mccartney.io>",
+  "homepage": "https://github.com/richmccartney/mono-test#readme",
+  "license": "MIT",
+  "main": "dist/components.js",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "directory": "packages/components",
+    "type": "git",
+    "url": "git+https://github.com/richmccartney/mono-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/richmccartney/mono-test/issues"
+  }
+}

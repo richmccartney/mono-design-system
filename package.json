@@ -1,0 +1,34 @@
+{
+  "name": "mono-test",
+  "version": "0.0.0",
+  "description": "mono-test",
+  "main": "index.js",
+  "repository": "git@github.com:richmccartney/mono-test.git",
+  "author": "Richard McCartney <richard@mccartney.io>",
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna clean",
+    "test": "lerna run test"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "actions/*",
+      "config/*"
+    ],
+    "nohoist": []
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1"
+  },
+  "dependencies": {
+    "@semantic-release/git": "^9.0.0",
+    "git-cz": "^4.7.1",
+    "multi-semantic-release": "^2.4.7",
+    "semantic-release": "^17.2.2"
+  }
+}
