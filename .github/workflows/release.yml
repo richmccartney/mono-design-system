@@ -15,17 +15,11 @@ jobs:
         with:
           node-version: 12.18.0
       
-      - name: install dependency
-        run: npm install
-        
-      - name: lerna bootstrap
-        run: npm run bootstrap
-        
-      - name: build
-        run: npm run build
+      - name: Install
+        run: yarn
         
       - name: release
-        run: npm run release
+        run: yarn release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

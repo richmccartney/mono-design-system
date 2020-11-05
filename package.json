@@ -6,6 +6,7 @@
   "repository": "git@github.com:richmccartney/mono-test.git",
   "author": "Richard McCartney <richard@mccartney.io>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna clean",
