@@ -25,7 +25,8 @@
     "node": ">= 12"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^5.0.1"
+    "@semantic-release/changelog": "^5.0.1",
+    "lerna": "^3.22.1"
   },
   "dependencies": {
     "@semantic-release/git": "^9.0.0",

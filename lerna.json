@@ -1,6 +1,18 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "2.1.0"
+  "lerna": "3.22.1",
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "command": {
+    "publish": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "message": "chore(release): updated release notes and package versions"
+    }
+  }
 }
