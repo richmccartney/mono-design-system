@@ -5,7 +5,7 @@
   "author": "Richard McCartney <richard@mccartney.io>",
   "homepage": "https://github.com/richmccartney/mono-test#readme",
   "license": "MIT",
-  "main": "dist/components.js",
+  "main": "dist/style.css",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
@@ -20,5 +20,25 @@
   },
   "bugs": {
     "url": "https://github.com/richmccartney/mono-test/issues"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "stylelint \"./**/*.scss\" --syntax scss",
+    "lint.fix": "stylelint \"./**/*.scss\" --fix"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "postcss": "^8.0.0",
+    "postcss-bem-linter": "^3.3.0",
+    "postcss-reporter": "^6.0.1",
+    "postcss-scss": "^3.0.2",
+    "rollup": "^2.33.1",
+    "rollup-plugin-postcss": "next",
+    "stylelint": "^13.7.2",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-suitcss": "^15.0.0",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-selector-bem-pattern": "^2.1.0"
   }
 }

@@ -1,0 +1,29 @@
+/** @define MyComponent */
+:root { // stylelint-disable-line rule-empty-line-before
+  --MyComponent-color: #0f0;
+}
+
+.MyComponent {
+  color: var(--MyComponent-color);
+  display: flex;
+
+  &.is-animating {
+    display: block;
+  }
+
+  &--modifier {
+    display: inline-block;
+  }
+
+  .MyComponent-part {
+    display: block;
+
+    &--modifier {
+      display: inline-block;
+    }
+  }
+
+  .MyComponent-anotherpart {
+    display: block;
+  }
+}
