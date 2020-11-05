@@ -1,4 +1,4 @@
-name: release
+name: Release
 on:
   push:
     branches: [ main, next ]
@@ -17,8 +17,11 @@ jobs:
       
       - name: Install
         run: yarn
+
+      - name: Build
+        run: yarn build
         
-      - name: release
+      - name: Release
         run: yarn release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "rootDir": "src" /* https://github.com/rollup/plugins/issues/287#issuecomment-606052505 */,
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "jsx": "react",
+    "sourceMap": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "example"]
+}

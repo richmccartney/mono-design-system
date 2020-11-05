@@ -1,0 +1,77 @@
+{
+  "name": "mono-test-react",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Richard McCartney <richard@mccartney.io>",
+  "homepage": "https://github.com/richmccartney/mono-test#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "style": "dist/index.css",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richmccartney/mono-test.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "storybook": "start-storybook --ci -p 1986",
+    "storybook.build": "build-storybook --docs --quiet",
+    "storybook.quiet": "yarn storybook --quiet",
+    "test": "jest --passWithNoTests"
+  },
+  "bugs": {
+    "url": "https://github.com/richmccartney/mono-test/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "@storybook/addon-essentials": "v6.1.0-alpha.3",
+    "@storybook/addon-links": "v6.1.0-alpha.3",
+    "@storybook/react": "v6.1.0-alpha.3",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^12.12.38",
+    "@types/prop-types": "^15.7.3",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/testing-library__jest-dom": "^5.9.2",
+    "@types/testing-library__react": "^10.2.0",
+    "@whitespace/storybook-addon-html": "^2.0.1",
+    "babel-eslint": "^10.0.0",
+    "babel-loader": "^8.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "classnames": "^2.2.6",
+    "jest": "^26.4.2",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.19.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "rollup": "^2.26.9",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-postcss": "^3.1.8",
+    "ts-jest": "^26.4.0",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
+  }
+}
