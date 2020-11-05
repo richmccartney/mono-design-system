@@ -10,7 +10,8 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna clean",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "release": "multi-semantic-release"
   },
   "workspaces": {
     "packages": [
