@@ -1,9 +1,14 @@
 import React, {
-  FunctionComponent,
+  forwardRef
 } from 'react';
 
-const Button: FunctionComponent = ({ children }) => {
-  return <button>{children}</button>
-}
+const Button = forwardRef<HTMLButtonElement>(
+  (
+    { children },
+    ref
+  ) => {
+  return <button ref={ref}>{children}</button>
+  }
+)
 
 export default Button;
