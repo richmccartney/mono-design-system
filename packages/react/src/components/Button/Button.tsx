@@ -2,12 +2,12 @@ import React, {
   forwardRef
 } from 'react';
 
-const Button = forwardRef<HTMLButtonElement>(
+const Button = forwardRef(
   (
-    { children },
+    { children, id },
     ref
   ) => {
-  return <button ref={ref}>{children}</button>
+  return <button id={id} ref={ref}>{children}</button>
   }
 )
 
