@@ -11,12 +11,13 @@ module.exports = {
   rules: {
     "at-rule-no-unknown": true,
     "scss/at-rule-no-unknown": true,
+    "no-eol-whitespace": null,
     "plugin/selector-bem-pattern": {
       preset: "suit",
       componentName: "[A-Z]+",
       componentSelectors: {
         initial:
-          "^\\.{componentName}(?:-[a-zA-Z0-9]+)?(?:--[a-zA-Z0-9]+)?(?:.is-[a-zA-Z0-9]+)?$",
+          "^\\.{componentName}(?:-[a-zA-Z0-9]+)?(?:--[a-zA-Z0-9]+)?(?:.is-[a-zA-Z0-9]+)?(?:.has-[a-zA-Z0-9]+)?$",
       },
       utilitySelectors: "^\\.u-[a-zA-Z0-9]+$",
     },

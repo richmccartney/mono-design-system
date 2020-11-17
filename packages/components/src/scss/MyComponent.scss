@@ -4,6 +4,8 @@
 }
 
 .MyComponent {
+  $c: &;
+  
   color: var(--MyComponent-color);
   display: flex;
 
@@ -11,7 +13,11 @@
     display: block;
   }
 
-  &--modifier {
+  &.has-focus {
+    display: block;
+  }
+
+  .MyComponent--modifier {
     display: inline-block;
   }
 

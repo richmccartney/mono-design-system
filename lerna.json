@@ -7,12 +7,5 @@
   "publishConfig": {
     "access": "public",
     "directory": "dist"
-  },
-  "command": {
-    "publish": {
-      "allowBranch": "main",
-      "conventionalCommits": true,
-      "message": "chore(release): updated release notes and package versions"
-    }
   }
 }
