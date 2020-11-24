@@ -1,0 +1,11 @@
+{
+    "font": {
+      "family": {
+        "open-sans": {
+          "value": "Open Sans"
+        },
+        "base": { "value": "{font.family.open-sans.value}" }
+      }
+    }
+  }
+  

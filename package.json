@@ -1,7 +1,7 @@
 {
-  "name": "mono-test",
+  "name": "mono-design-system",
   "version": "0.0.0",
-  "description": "mono-test",
+  "description": "Mono Design System",
   "main": "index.js",
   "repository": "git@github.com:richmccartney/mono-test.git",
   "author": "Richard McCartney <richard@mccartney.io>",
