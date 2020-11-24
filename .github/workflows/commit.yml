@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: 12.18.0
       
-      - name: Install
+      - name: Install 🚧
         run: yarn
 
-      - name: Lint
+      - name: Lint 📝
         run: yarn lint
