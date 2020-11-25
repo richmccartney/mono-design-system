@@ -1,0 +1,17 @@
+/** @define Button */
+:root { // stylelint-disable-line rule-empty-line-before
+  --Button-color: var(--color-white);
+  --Button-background-color: var(--color-black);
+}
+
+.Button {
+  appearance: none;
+  background-color: var(--Button-background-color);
+  color: var(--Button-color);
+  display: inline-block;
+
+  .Button--isFullWidth {
+    display: block;
+    width: 100%;
+  }
+}
