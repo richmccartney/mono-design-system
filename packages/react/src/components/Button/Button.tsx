@@ -4,11 +4,14 @@ import React, {
 
 type Ref = React.Ref<HTMLButtonElement>
 
-interface ButtonProps {
-  children: ReactNode
-  id: string
+export interface ButtonProps {
+  children?: ReactNode
+  id?: string
 }
 
+/**
+ * Use `Button` to allow users to take actions with clicks and taps.
+ */
 const Button: FunctionComponent<ButtonProps> = forwardRef(
   (
     { children, id },
