@@ -1,11 +1,13 @@
 // Button.stories.js
 
 import React from 'react';
-import Button from './Button';
+import { Story } from "@storybook/react";
+import Button, { ButtonProps } from './Button';
 import mdx from './Button.mdx';
 
 export default {
   title: 'Components/Button',
+  args: { children: "Button" },
   parameters: {
     docs: {
       page: mdx,
@@ -13,4 +15,4 @@ export default {
   },
   component: Button,
 };
-export const basic = () => <Button>Basic</Button>;
+export const Basic: Story<ButtonProps> = args => <Button {...args} />;
