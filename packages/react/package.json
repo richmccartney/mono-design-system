@@ -21,6 +21,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "doctoc": "doctoc --notitle",
     "storybook": "start-storybook --ci -p 1986",
     "storybook.build": "PACKAGE_VERSION=$(node -pe \"require('./package.json').version\") && build-storybook -o ./build/storybook-static/$PACKAGE_VERSION",
     "storybook.quiet": "yarn storybook --quiet",
@@ -58,6 +59,7 @@
     "babel-loader": "^8.1.0",
     "cheerio": "^1.0.0-rc.3",
     "classnames": "^2.2.6",
+    "doctoc": "^1.4.0",
     "jest": "^26.4.2",
     "postcss-custom-media": "^7.0.8",
     "postcss-import": "^12.0.1",
