@@ -2,14 +2,14 @@
 name: Release
 
 on:
+  push:
   pull_request:
     types: [closed]
     branches: [ main, next ]
 
 jobs:
-  Release:
+  Test:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged
 
     steps:
       - name: checkout
@@ -20,19 +20,39 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.18.0
-      
+
       - name: Install 🚧
         run: yarn
 
       - name: Lint 📝
         run: yarn lint
-      
+
       - name: Test 🧪
         run: yarn test
-      
+
+  Release:
+
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+
+    needs: [Test]
+
+    steps:
+      - name: checkout
+        if: github.event.pull_request.merged
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.18.0
+
+      - name: Install 🚧
+        run: yarn
+
       - name: Build 💡
         run: yarn build
-        
+
       - name: Release 🚀
         run: yarn release
         env:
