@@ -1,0 +1,28 @@
+---
+name: Commit
+
+on:
+  push:
+    branches:
+    - '**'
+
+jobs:
+  Commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.18.0
+      
+      - name: Install 🚧
+        run: yarn
+
+      - name: Lint 📝
+        run: yarn lint
+
+      - name: Format 🔀
+        run: yarn format

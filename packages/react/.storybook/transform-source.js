@@ -1,7 +1,7 @@
-import cheerio from "cheerio";
-import parserHtml from "prettier/parser-html";
-import prettier from "prettier/standalone";
-import ReactDomServer from "react-dom/server";
+import cheerio from 'cheerio';
+import parserHtml from 'prettier/parser-html';
+import prettier from 'prettier/standalone';
+import ReactDomServer from 'react-dom/server';
 
 /**
  * Renders a React component to HTML, and strips out any wrapping divs
@@ -16,14 +16,14 @@ export default (_, storyContext) => {
   const $ = cheerio.load(staticMarkup);
 
   // Replace example content
-  $(".u-exampleContent").replaceWith("Example content");
+  $('.u-exampleContent').replaceWith('Example content');
 
   // Strip out any wrapping components
-  const storyStaticMarkup = $("#story-wrapper > div").html();
+  const storyStaticMarkup = $('#story-wrapper > div').html();
 
   return prettier.format(storyStaticMarkup, {
-    htmlWhitespaceSensitivity: "ignore",
-    parser: "html",
-    plugins: [parserHtml]
+    htmlWhitespaceSensitivity: 'ignore',
+    parser: 'html',
+    plugins: [parserHtml],
   });
 };

@@ -1,7 +1,7 @@
 {
-  "name": "mono-test",
+  "name": "mono-design-system",
   "version": "0.0.0",
-  "description": "mono-test",
+  "description": "Mono Design System",
   "main": "index.js",
   "repository": "git@github.com:richmccartney/mono-test.git",
   "author": "Richard McCartney <richard@mccartney.io>",
@@ -10,7 +10,15 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna clean",
-    "lint": "lerna run lint",
+    "format": "lerna run format && yarn format:prettier",
+    "format:fix": "lerna run format:fix && yarn format:prettier:fix",
+    "format:prettier": "yarn prettier --check './**/*.{css,html,js,json,md,ts,tsx,scss}'",
+    "format:prettier:fix": "yarn prettier --write './**/*.{css,html,js,json,md,ts,tsx,scss}' ",
+    "lint": "lerna run lint && yarn lint:eslint",
+    "lint:fix": "lerna run lint:fix && yarn lint:eslint:fix",
+    "lint:eslint": "eslint .",
+    "lint:eslint:fix": "eslint . --fix",
+    "lint::eslint:ci": "eslint . --max-warnings 0",
     "test": "lerna run test",
     "release": "multi-semantic-release"
   },
@@ -27,13 +35,31 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
-    "lerna": "^3.22.1"
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "babel-eslint": "^10.0.0",
+    "lerna": "^3.22.1",
+    "prettier": "^2.2.1",
+    "eslint": "^7.5.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.9.2"
   },
   "dependencies": {
-    "@semantic-release/git": "^9.0.0",
     "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "git-cz": "^4.7.1",
     "multi-semantic-release": "^2.4.7",
     "semantic-release": "^17.2.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./config/eslint-config"
+    ]
   }
 }
