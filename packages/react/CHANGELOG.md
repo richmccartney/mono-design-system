@@ -1,3 +1,14 @@
+# mono-react-components 1.0.0 (2020-11-30)
+
+
+### Features
+
+* setup of tokes package ([2e08c1e](https://github.com/richmccartney/mono-test/commit/2e08c1e479f66db4acce5a5b6ce33966062a8653))
+* **button:** setting up types on button ([610938a](https://github.com/richmccartney/mono-test/commit/610938a31a28721aa01f35ff337098ad837268cd))
+* Adds new component styles setup ([d5a321a](https://github.com/richmccartney/mono-test/commit/d5a321aa4ddd3d04e33e0a0526193cfcafb6fb9b))
+* include forwardRef to button ([4d592a0](https://github.com/richmccartney/mono-test/commit/4d592a002836c766abd84d4d394cbe6f18092fea))
+* New react package and button component ([af157ab](https://github.com/richmccartney/mono-test/commit/af157abbea505c7b948c32195f638eb12a9a7d65))
+
 # mono-react 1.0.0 (2020-11-30)
 
 ### Features
