@@ -1,4 +1,4 @@
-'use strict';
+
 
 const prettierConfig = require('./config/prettier-config');
 
