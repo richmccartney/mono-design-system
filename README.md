@@ -1,5 +1,5 @@
 <h1 align="center">
-  Mono Test
+  Mono Design System
 </h1>
 <p align="center">
   <a href="https://github.com/richmccartney/mono-design-system/blob/main/LICENSE">
