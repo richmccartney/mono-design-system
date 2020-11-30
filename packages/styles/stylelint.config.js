@@ -12,6 +12,7 @@ module.exports = {
     'at-rule-no-unknown': true,
     'scss/at-rule-no-unknown': true,
     'no-eol-whitespace': null,
+    'string-quotes': 'single',
     'plugin/selector-bem-pattern': {
       preset: 'suit',
       componentName: '[A-Z]+',
