@@ -2,15 +2,12 @@
 name: Release
 
 on:
-  pull_request_target:
+  push:
     branches: [ main, next ]
-    types:
-      - closed
 
 jobs:
   Test:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged_by != ''
 
     steps:
       - name: checkout
@@ -32,7 +29,6 @@ jobs:
 
   Release:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged_by != ''
 
     needs: [Test]
 
