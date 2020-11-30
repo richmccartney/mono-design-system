@@ -10,7 +10,10 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna clean",
-    "format": "lerna run format",
+    "format": "lerna run format && yarn format:prettier",
+    "format:fix": "lerna run format:fix && yarn format:prettier:fix",
+    "format:prettier": "yarn prettier './**/*.{css,html,js,json,md,ts,tsx,scss}' --check",
+    "format:prettier:fix": "yarn format:prettier --write",
     "lint": "lerna run lint",
     "test": "lerna run test",
     "release": "multi-semantic-release"
@@ -28,11 +31,12 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "prettier": "^2.2.1"
   },
   "dependencies": {
-    "@semantic-release/git": "^9.0.0",
     "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "git-cz": "^4.7.1",
     "multi-semantic-release": "^2.4.7",
     "semantic-release": "^17.2.2"

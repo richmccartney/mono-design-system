@@ -109,8 +109,8 @@ console.log("Build started...");
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
 
-["mono"].map(function(brand) {
-  ["styles", "js", "ios", "android"].map(function(platform) {
+["mono"].map(function (brand) {
+  ["styles", "js", "ios", "android"].map(function (platform) {
     console.log("\n==============================================");
     console.log(`\nProcessing: [${platform}] [${brand}]`);
 

@@ -18,7 +18,7 @@ export default [
       dir: "dist",
       format: "cjs",
       exports: "named",
-      sourcemap: true
+      sourcemap: true,
     },
 
     plugins: [
@@ -34,10 +34,10 @@ export default [
           "**/__mocks__/**/*.ts",
           "**/__tests__/**/*.tsx",
           "**/*.test.tsx",
-          "**/*.stories.tsx"
-        ]
-      })
-    ]
+          "**/*.stories.tsx",
+        ],
+      }),
+    ],
   },
   // ES Module
   {
@@ -47,17 +47,17 @@ export default [
         file: "dist/index.es.js",
         format: "es",
         exports: "named",
-        sourcemap: true
-      }
+        sourcemap: true,
+      },
     ],
     plugins: [
       ...basePlugins,
       postcss({
         ...postcssConfig,
         extract: false, // We don't extract CSS for modules because we don't want index.es.css
-        inject: false // We don't want to inject any styles into the head of the page
+        inject: false, // We don't want to inject any styles into the head of the page
       }),
-      typescript()
-    ]
-  }
+      typescript(),
+    ],
+  },
 ];
