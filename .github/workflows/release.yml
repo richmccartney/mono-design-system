@@ -2,18 +2,18 @@
 name: Release
 
 on:
-  push:
-  pull_request:
-    types: [closed]
+  pull_request_target:
     branches: [ main, next ]
+    types:
+      - closed
 
 jobs:
   Test:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged_by != ''
 
     steps:
       - name: checkout
-        if: github.event.pull_request.merged
         uses: actions/checkout@v2
 
       - name: Setup Node.js
@@ -31,15 +31,13 @@ jobs:
         run: yarn test
 
   Release:
-
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged_by != ''
 
     needs: [Test]
 
     steps:
       - name: checkout
-        if: github.event.pull_request.merged
         uses: actions/checkout@v2
 
       - name: Setup Node.js
