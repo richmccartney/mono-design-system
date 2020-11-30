@@ -24,6 +24,6 @@ export default (_, storyContext) => {
   return prettier.format(storyStaticMarkup, {
     htmlWhitespaceSensitivity: "ignore",
     parser: "html",
-    plugins: [parserHtml]
+    plugins: [parserHtml],
   });
 };
