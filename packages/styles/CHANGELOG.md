@@ -1,3 +1,10 @@
+# mono-styles [1.0.0-next.2](https://github.com/richmccartney/mono-test/compare/mono-styles@1.0.0-next.1...mono-styles@1.0.0-next.2) (2020-12-02)
+
+
+### Features
+
+* **styles:** import reset ([f4fe032](https://github.com/richmccartney/mono-test/commit/f4fe0326880d75ad538a77d897998858f6102796))
+
 # mono-styles 1.0.0-next.1 (2020-12-02)
 
 
