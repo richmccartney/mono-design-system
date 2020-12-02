@@ -18,6 +18,20 @@
 > packages for React and CSS. This template is maintained with Lerna and
 > Semantic release to create quick and continuous development.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [The Repository](#the-repository)
+    - [What is in the project](#what-is-in-the-project)
+  - [Getting started](#getting-started)
+    - [Requirements](#requirements)
+    - [Installation](#installation)
+  - [Contributing](#contributing)
+  - [Feedback](#feedback)
+  - [Licence](#licence)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## The Repository
 
 This repository is where the Mono Design System is maintained. Not only is this
