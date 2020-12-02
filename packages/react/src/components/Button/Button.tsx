@@ -13,7 +13,7 @@ export interface ButtonProps {
 const Button: FunctionComponent<ButtonProps> = forwardRef(
   ({ children, id }, ref: Ref) => {
     return (
-      <button id={id} ref={ref}>
+      <button id={id} ref={ref} className="button">
         {children}
       </button>
     );
