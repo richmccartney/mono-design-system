@@ -26,6 +26,9 @@
     "lint": "stylelint \"./**/*.scss\" --syntax scss",
     "lint.fix": "stylelint \"./**/*.scss\" --fix"
   },
+  "dependencies": {
+    "mono-tokens": "^1.0.0"
+  },
   "devDependencies": {
     "node-sass": "^5.0.0",
     "postcss": "^8.0.0",
