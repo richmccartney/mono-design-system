@@ -36,11 +36,12 @@
     "node": ">= 12"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/changelog": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "babel-eslint": "^10.0.0",
-    "commitlint": "^11.0.0",
     "eslint": "^7.5.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.2.0",
@@ -50,6 +51,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.9.2",
+    "husky": "^4.3.5",
     "lerna": "^3.22.1",
     "prettier": "^2.2.1"
   },
@@ -59,6 +61,11 @@
     "git-cz": "^4.7.1",
     "multi-semantic-release": "^2.4.7",
     "semantic-release": "^17.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "eslintConfig": {
     "extends": [
