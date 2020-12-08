@@ -1,9 +1,7 @@
 ---
 name: 🚀 Release
 
-on:
-  workflow_dispatch:
-    types: [multi-semantic-release]
+on: [ workflow_dispatch ]
 
 jobs:
   Test:
