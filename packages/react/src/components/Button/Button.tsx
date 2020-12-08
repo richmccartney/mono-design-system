@@ -1,19 +1,23 @@
-import React, { forwardRef, FunctionComponent, ReactNode } from 'react';
+import classNames from "classnames";
+import React, { forwardRef, FunctionComponent } from 'react';
+import { ButtonProps } from "./Button.types";
+
+import './Button.scss';
 
 type Ref = React.Ref<HTMLButtonElement>;
-
-export interface ButtonProps {
-  children?: ReactNode;
-  id?: string;
-}
 
 /**
  * Use `Button` to allow users to take actions with clicks and taps.
  */
 const Button: FunctionComponent<ButtonProps> = forwardRef(
   ({ children, id }, ref: Ref) => {
+
+    const buttonClasses = classNames({
+      "Button": true
+    });
+
     return (
-      <button id={id} ref={ref} className="button">
+      <button className={buttonClasses} id={id} ref={ref}>
         {children}
       </button>
     );

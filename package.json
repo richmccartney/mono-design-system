@@ -20,7 +20,7 @@
     "lint:eslint": "eslint .",
     "lint:eslint:fix": "eslint . --fix",
     "lint:eslint:ci": "eslint . --max-warnings 0",
-    "start:storybook": "lerna run storybook",
+    "start:storybook": "lerna run storybook --stream",
     "test": "lerna run test",
     "release": "multi-semantic-release"
   },
