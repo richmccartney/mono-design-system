@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
+    "build:storybook": "lerna run storybook.build",
     "clean": "lerna clean",
     "format": "lerna run format && yarn format:prettier",
     "format:fix": "lerna run format:fix && yarn format:prettier:fix",
@@ -18,7 +19,8 @@
     "lint:fix": "lerna run lint:fix && yarn lint:eslint:fix",
     "lint:eslint": "eslint .",
     "lint:eslint:fix": "eslint . --fix",
-    "lint::eslint:ci": "eslint . --max-warnings 0",
+    "lint:eslint:ci": "eslint . --max-warnings 0",
+    "start:storybook": "lerna run storybook",
     "test": "lerna run test",
     "release": "multi-semantic-release"
   },
