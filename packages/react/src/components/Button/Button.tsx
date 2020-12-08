@@ -1,8 +1,8 @@
-import classNames from "classnames";
+import classNames from 'classnames';
 import React, { forwardRef, FunctionComponent } from 'react';
-import { ButtonProps } from "./Button.types";
+import { ButtonProps } from './Button.types';
 
-import './Button.scss';
+import styles from './Button.scss';
 
 type Ref = React.Ref<HTMLButtonElement>;
 
@@ -11,9 +11,8 @@ type Ref = React.Ref<HTMLButtonElement>;
  */
 const Button: FunctionComponent<ButtonProps> = forwardRef(
   ({ children, id }, ref: Ref) => {
-
     const buttonClasses = classNames({
-      "Button": true
+      [styles.Button]: true,
     });
 
     return (
