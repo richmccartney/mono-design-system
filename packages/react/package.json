@@ -1,6 +1,6 @@
 {
   "name": "mono-react-components",
-  "version": "1.0.0",
+  "version": "1.1.0-next.1",
   "description": "> TODO: description",
   "author": "Richard McCartney <richard@mccartney.io>",
   "homepage": "https://github.com/richmccartney/mono-test#readme",
@@ -23,7 +23,7 @@
     "build": "rollup -c",
     "doctoc": "doctoc --notitle",
     "storybook": "start-storybook --ci -p 1986",
-    "storybook.build": "PACKAGE_VERSION=$(node -pe \"require('./package.json').version\") && build-storybook -o ./build/storybook-static/$PACKAGE_VERSION",
+    "storybook.build": "PACKAGE_VERSION=$(node -pe \"require('./package.json').version\") && build-storybook --no-dll -o ./build/storybook-static/$PACKAGE_VERSION",
     "storybook.quiet": "yarn storybook --quiet",
     "test": "jest --passWithNoTests"
   },
@@ -36,14 +36,17 @@
   "peerDependencies": {
     "react": "^16.0.0"
   },
+  "dependencies": {
+    "mono-styles": "next"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.5",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-typescript": "^5.0.2",
-    "@storybook/addon-essentials": "v6.1.0-alpha.3",
-    "@storybook/addon-links": "v6.1.0-alpha.3",
-    "@storybook/react": "v6.1.0-alpha.3",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/react": "^6.1.9",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
     "@types/classnames": "^2.2.10",

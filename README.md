@@ -18,6 +18,20 @@
 > packages for React and CSS. This template is maintained with Lerna and
 > Semantic release to create quick and continuous development.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [The Repository](#the-repository)
+    - [What is in the project](#what-is-in-the-project)
+  - [Getting started](#getting-started)
+    - [Requirements](#requirements)
+    - [Installation](#installation)
+  - [Contributing](#contributing)
+  - [Feedback](#feedback)
+  - [Licence](#licence)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## The Repository
 
 This repository is where the Mono Design System is maintained. Not only is this
@@ -26,17 +40,35 @@ experiences and a commonplace to find visual styles, components and patterns.
 This source code is available to everyone under the standard
 [MIT license](https://github.com/richmccartney/mono-design-system/blob/main/LICENSE).
 
+### What is in the project
+
+If you've made a copy or wish to get started with any of the work in this repo, check out [mono-react](https://github.com/richmccartney/mono-design-system/tree/main/packages/react) or [mono-styles](https://github.com/richmccartney/mono-design-system/tree/main/packages/styles). These will provide the building blocks in `react` and `css`.
+
 ## Getting started
 
-[// TODO]
+### Requirements
+
+This project uses [Yarn](https://yarnpkg.com/) and [Node](https://nodejs.org/en/). Ensure you are using version `1.2.55` for yarn, to install please follow the [installation guide](https://classic.yarnpkg.com/en/docs/install).
+
+For node make sure you've set you local to version `12.*.*`. Use [nvm](https://github.com/nvm-sh/nvm) to manage your local development versions.
+
+### Installation
+
+To get started we need to setup all our local dependencies, we're using yarn workspaces and lerna to manage our mono repo.
+
+```sh
+yarn
+```
 
 ## Contributing
 
-[// TODO]
+Please help make this project better. For more information take a look at [CONTRIBUTING.md](https://github.com/richmccartney/mono-design-system/tree/main/CONTRIBUTING.md).
 
 ## Feedback
 
-[// TODO]
+Please ask any questions on this project, you can do so by [creating a new issue](https://github.com/richmccartney/mono-design-system/issues/new/choose). Or contributing to any [active issues](https://github.com/richmccartney/mono-design-system/issues).
+
+If you wish to get in contact, please don't hesitate via twitter [@Rich_McCartney](https://twitter.com/rich_mccartney).
 
 ## Licence
 

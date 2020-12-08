@@ -1,6 +1,6 @@
 {
   "name": "mono-styles",
-  "version": "1.0.0",
+  "version": "1.1.0-next.1",
   "description": "> TODO: description",
   "author": "Richard McCartney <richard@mccartney.io>",
   "homepage": "https://github.com/richmccartney/mono-test#readme",
@@ -26,7 +26,11 @@
     "lint": "stylelint \"./**/*.scss\" --syntax scss",
     "lint.fix": "stylelint \"./**/*.scss\" --fix"
   },
+  "dependencies": {
+    "mono-tokens": "next"
+  },
   "devDependencies": {
+    "modern-css-reset": "^1.3.0",
     "node-sass": "^5.0.0",
     "postcss": "^8.0.0",
     "postcss-bem-linter": "^3.3.0",

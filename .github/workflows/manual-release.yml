@@ -1,0 +1,55 @@
+---
+name: Manually triggered release
+
+on:
+  workflow_dispatch:
+    types: [semantic-release]
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.18.0
+
+      - name: Install 🚧
+        run: yarn
+
+      - name: Lint 📝
+        run: yarn lint
+
+      - name: Test 🧪
+        run: yarn test
+
+  Release:
+    runs-on: ubuntu-latest
+
+    needs: [Test]
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.18.0
+
+      - name: Install 🚧
+        run: yarn
+
+      - name: Build 💡
+        run: yarn build
+
+      - name: Release 🚀
+        run: yarn release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          SEMANTIC_RELEASE_PACKAGE: ${{ secrets.GITHUB_TOKEN }}
