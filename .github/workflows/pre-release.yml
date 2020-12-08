@@ -47,12 +47,12 @@ jobs:
     needs: [Test]
 
     steps:
-      - name: Get yarn cache directory path
+      - name: 📁 Get Yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - uses: actions/cache@v2
-        name: Cache yarn between builds
+        name: ♻️ Cache yarn between builds
         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
@@ -74,7 +74,7 @@ jobs:
       - name: 💡 Build
         run: yarn build
 
-      - name: 👷‍♂️ Dry run release
+      - name: 👷‍♂️ Release dry run
         run: yarn release:dryrun
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
