@@ -8,7 +8,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "lerna run build",
+    "build": "yarn build:tokens && yarn build:styles && yarn build:components",
+    "build:components": "lerna run --scope \"mono-react-components*\" build",
+    "build:styles": "lerna run --scope \"mono-styles*\" build",
+    "build:tokens": "lerna run --scope \"mono-tokens*\" build",
     "build:storybook": "lerna run storybook.build",
     "clean": "lerna clean",
     "format": "lerna run format && yarn format:prettier",
@@ -20,9 +23,11 @@
     "lint:eslint": "eslint .",
     "lint:eslint:fix": "eslint . --fix",
     "lint:eslint:ci": "eslint . --max-warnings 0",
+    "start": "yarn start:storybook",
     "start:storybook": "lerna run storybook --stream",
     "test": "lerna run test",
-    "release": "multi-semantic-release"
+    "release": "multi-semantic-release",
+    "release:dryrun": "yarn release --dry-run"
   },
   "workspaces": {
     "packages": [
