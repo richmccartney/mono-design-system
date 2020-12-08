@@ -6,6 +6,7 @@ import postcss from 'rollup-plugin-postcss';
 
 const basePlugins = [external(), resolve(), commonjs()];
 const postcssConfig = require('./postcss.config');
+const path = require('path');
 
 /**
  * We have multiple output configs to support CommonJS and ES modules.
@@ -25,6 +26,14 @@ export default [
       ...basePlugins,
       postcss({
         ...postcssConfig,
+        use: [
+          [
+            'sass',
+            {
+              includePaths: [path.resolve('node_modules')],
+            },
+          ],
+        ],
       }),
       // We do this here because we are able to use `dir` for cjs, and
       // declaration exports require use of a dir. ES modules require a
@@ -56,6 +65,14 @@ export default [
       ...basePlugins,
       postcss({
         ...postcssConfig,
+        use: [
+          [
+            'sass',
+            {
+              includePaths: [path.resolve('node_modules')],
+            },
+          ],
+        ],
         extract: false, // We don't extract CSS for modules because we don't want index.es.css
         inject: false, // We don't want to inject any styles into the head of the page
       }),
