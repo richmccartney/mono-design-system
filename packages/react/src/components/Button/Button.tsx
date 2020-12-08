@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React, { forwardRef, FunctionComponent } from 'react';
 import { ButtonProps } from './Button.types';
 
-import './Button.scss';
+// import './Button.scss';
 
 type Ref = React.Ref<HTMLButtonElement>;
 
@@ -12,7 +12,7 @@ type Ref = React.Ref<HTMLButtonElement>;
 const Button: FunctionComponent<ButtonProps> = forwardRef(
   ({ children, id, isFullWidth }, ref: Ref) => {
     const buttonClasses = classNames({
-      Button: true,
+      'Button': true,
       'Button--isFullWidth': !!isFullWidth,
     });
 
