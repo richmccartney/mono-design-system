@@ -12121,8 +12121,10 @@ modify-values@^1.0.0:
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
-mono-styles@2.0.0:
+mono-styles@next:
   version "2.0.0-next.1"
+  resolved "https://registry.npmjs.org/mono-styles/-/mono-styles-2.0.0-next.1.tgz#f0bb68dfbb29f304f5124843eeaf64f96db6d427"
+  integrity sha512-8gKiNZP6N5JXa5wneAQjly8nqH6Bp9LbGGh/MWEKb8Jv4+MnSDxka3FQGdhDJ0juNDMZ/1t0W36zMtMi0vyOxA==
   dependencies:
     mono-tokens "1.0.0"
 
