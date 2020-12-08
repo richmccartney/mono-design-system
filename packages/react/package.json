@@ -1,6 +1,6 @@
 {
   "name": "mono-react-components",
-  "version": "1.0.0",
+  "version": "1.1.0-next.1",
   "description": "> TODO: description",
   "author": "Richard McCartney <richard@mccartney.io>",
   "homepage": "https://github.com/richmccartney/mono-test#readme",
@@ -37,7 +37,7 @@
     "react": "^16.0.0"
   },
   "dependencies": {
-    "mono-styles": "1.0.0"
+    "mono-styles": "1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",
