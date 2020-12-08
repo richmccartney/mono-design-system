@@ -9,25 +9,25 @@ jobs:
   Review:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: 🛒 Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
+      - name: 🏗 Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 12.18.0
 
-      - name: Install 🚧
+      - name: 🚧 Install
         run: yarn
 
-      - name: Lint 📝
+      - name: 📝 Lint
         run: yarn lint
 
-      - name: Format 🔀
+      - name: 🔀 Format
         run: yarn format
 
-      - name: Test 🧪
+      - name: 🧪 Test
         run: yarn test
 
-      - name: Build 💡
+      - name: 💡 Build
         run: yarn build
