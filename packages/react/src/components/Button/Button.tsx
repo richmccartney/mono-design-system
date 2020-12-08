@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React, { forwardRef, FunctionComponent } from 'react';
 import { ButtonProps } from './Button.types';
 
-import styles from './Button.scss';
+import './Button.scss';
 
 type Ref = React.Ref<HTMLButtonElement>;
 
@@ -10,9 +10,10 @@ type Ref = React.Ref<HTMLButtonElement>;
  * Use `Button` to allow users to take actions with clicks and taps.
  */
 const Button: FunctionComponent<ButtonProps> = forwardRef(
-  ({ children, id }, ref: Ref) => {
+  ({ children, id, isFullWidth }, ref: Ref) => {
     const buttonClasses = classNames({
-      [styles.Button]: true,
+      Button: true,
+      'Button--isFullWidth': !!isFullWidth,
     });
 
     return (
