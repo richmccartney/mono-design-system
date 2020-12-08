@@ -1,3 +1,13 @@
+## mono-react-components [1.0.1-next.1](https://github.com/richmccartney/mono-test/compare/mono-react-components@1.0.0...mono-react-components@1.0.1-next.1) (2020-12-08)
+
+
+
+
+
+### Dependencies
+
+* **mono-styles:** upgraded to 2.0.0-next.1
+
 # mono-react-components [1.1.0-next.1](https://github.com/richmccartney/mono-test/compare/mono-react-components@1.0.0...mono-react-components@1.1.0-next.1) (2020-12-03)
 
 
