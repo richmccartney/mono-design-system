@@ -1,3 +1,15 @@
+# mono-styles [2.0.0-next.1](https://github.com/richmccartney/mono-test/compare/mono-styles@1.0.0...mono-styles@2.0.0-next.1) (2020-12-08)
+
+
+### Features
+
+* output src scss files to distribution ([3ed5354](https://github.com/richmccartney/mono-test/commit/3ed5354017ecc41289dc48dc457ba2231720cf64))
+
+
+### BREAKING CHANGES
+
+* styles.css has a new endpoint in mono-styles, dist/css/styles.css
+
 # mono-styles [1.1.0-next.1](https://github.com/richmccartney/mono-test/compare/mono-styles@1.0.0...mono-styles@1.1.0-next.1) (2020-12-03)
 
 
