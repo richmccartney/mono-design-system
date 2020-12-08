@@ -1,8 +1,10 @@
 /** @define Button */
 // stylelint-disable-next-line
+@import '~mono-tokens/dist/web/mono/scss/tokens';
+
 :root {
-  --Button-color: var(--color-white);
-  --Button-background-color: var(--color-black);
+  --Button-color: #{$color-white};
+  --Button-background-color: #{color-black};
 }
 
 .Button {
