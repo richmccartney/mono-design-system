@@ -1,7 +1,9 @@
 ---
 name: 🚀 Release
 
-on: [ workflow_dispatch ]
+on:
+  workflow_dispatch:
+    branches: [ main, next ]
 
 jobs:
   Test:
