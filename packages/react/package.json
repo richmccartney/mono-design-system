@@ -37,7 +37,7 @@
     "react": "^16.0.0"
   },
   "dependencies": {
-    "mono-styles": "1.1.0"
+    "mono-styles": "next"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",

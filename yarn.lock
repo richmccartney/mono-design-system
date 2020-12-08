@@ -11898,10 +11898,17 @@ modify-values@^1.0.0:
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
-mono-styles@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/mono-styles/-/mono-styles-1.0.0.tgz#b148934fe741bab20134afbc9f38aa04843c7368"
-  integrity sha512-ZeBtmlri+EiApRhuvI+6+9QzSeJ1DQ6AkUXe7XIRhEsESr7T4eFGpe7a3PNTOBOuwDyEos5BAjCWnl5hPc2q3Q==
+mono-styles@next:
+  version "1.1.0-next.1"
+  resolved "https://registry.npmjs.org/mono-styles/-/mono-styles-1.1.0-next.1.tgz#247c392527a7e47716272b09a44f66ffae35cef1"
+  integrity sha512-DbvGFIwz3W3koSapVV5vTLBJ+Lp5dvxaNGK4unUB2f0CJ6dDnOtDWQYdjmGdCwC5RwCtkTzzoXs50o9ICGghxQ==
+  dependencies:
+    mono-tokens "1.0.0"
+
+mono-tokens@next:
+  version "1.0.0-next.1"
+  resolved "https://registry.npmjs.org/mono-tokens/-/mono-tokens-1.0.0-next.1.tgz#4470786bc343012d4b3334aa8bbcb3401f89a202"
+  integrity sha512-a+oF+tIBUN7BmuqIzwNxQYV90IcFgOSyziEv9GfVB+yh9MR+z+3v8W3lozBZiOUyFZ2U8kqXfz/r6WB39/M0JA==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
