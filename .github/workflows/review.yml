@@ -20,12 +20,6 @@ jobs:
       - name: 🚧 Install
         run: yarn
 
-      - name: 📝 Lint
-        run: yarn lint
-
-      - name: 🔀 Format
-        run: yarn format
-
       - name: 🧪 Test
         run: yarn test
 

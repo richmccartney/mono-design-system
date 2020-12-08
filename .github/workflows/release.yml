@@ -3,7 +3,7 @@ name: 🚀 Release
 
 on:
   workflow_dispatch:
-    types: [semantic-release]
+    types: [multi-semantic-release]
 
 jobs:
   Test:
@@ -20,9 +20,6 @@ jobs:
 
       - name: 🚧 Install
         run: yarn
-
-      - name: 📝 Lint
-        run: yarn lint
 
       - name: 🧪 Test
         run: yarn test
