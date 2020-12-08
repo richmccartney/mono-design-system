@@ -5,7 +5,7 @@
   "author": "Richard McCartney <richard@mccartney.io>",
   "homepage": "https://github.com/richmccartney/mono-test#readme",
   "license": "MIT",
-  "main": "dist/style.css",
+  "main": "dist/css/style.css",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
@@ -37,6 +37,7 @@
     "postcss-reporter": "^6.0.1",
     "postcss-scss": "^3.0.2",
     "rollup": "^2.33.1",
+    "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-postcss": "next",
     "stylelint": "^13.7.2",
     "stylelint-config-recommended-scss": "^4.2.0",
