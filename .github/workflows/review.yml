@@ -1,5 +1,5 @@
 ---
-name: Review
+name: 🔎 Review
 
 on:
   pull_request:
@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.18.0
-      
+
       - name: Install 🚧
         run: yarn
 
@@ -25,7 +25,7 @@ jobs:
 
       - name: Format 🔀
         run: yarn format
-      
+
       - name: Test 🧪
         run: yarn test
 
