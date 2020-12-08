@@ -23,7 +23,10 @@ export default [
 
     plugins: [
       ...basePlugins,
-      postcss(postcssConfig),
+      postcss({
+        ...postcssConfig,
+        modules: true,
+      }),
       // We do this here because we are able to use `dir` for cjs, and
       // declaration exports require use of a dir. ES modules require a
       // file so that we can specify standard .es.js file extension.
@@ -54,6 +57,7 @@ export default [
       ...basePlugins,
       postcss({
         ...postcssConfig,
+        modules: true,
         extract: false, // We don't extract CSS for modules because we don't want index.es.css
         inject: false, // We don't want to inject any styles into the head of the page
       }),
