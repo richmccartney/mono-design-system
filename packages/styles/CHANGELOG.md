@@ -1,3 +1,10 @@
+# mono-styles [2.1.0](https://github.com/richmccartney/mono-test/compare/mono-styles@2.0.0...mono-styles@2.1.0) (2021-01-03)
+
+
+### Features
+
+* bundling SCSS output with React components package ([5ca3a8b](https://github.com/richmccartney/mono-test/commit/5ca3a8b929cdbc8c2f3e6816d1cc2104840c4d1b))
+
 # mono-styles [2.0.0-next.2](https://github.com/richmccartney/mono-test/compare/mono-styles@2.0.0-next.1...mono-styles@2.0.0-next.2) (2020-12-09)
 
 
