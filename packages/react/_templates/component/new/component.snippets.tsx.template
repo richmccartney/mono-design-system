@@ -1,0 +1,13 @@
+---
+to: src/components/<%= name %>/<%= name %>.snippets.tsx
+---
+
+export const <%= name %>Snippets = [
+  {
+    group: '<%= name %>',
+    name: 'Default',
+    code: `
+      <<%= name %> />
+    `,
+  },
+];

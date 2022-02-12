@@ -7,18 +7,18 @@
   --Button-background-color: #{color-black};
 }
 
-.Button {
+.mono-Button {
   appearance: none;
   background-color: var(--Button-background-color);
   color: var(--Button-color);
   display: inline-block;
 
-  .Button--isFullWidth {
+  .mono-Button--isFullWidth {
     display: block;
     width: 100%;
   }
 
-  .Button--isDisabled {
+  .mono-Button--isDisabled {
     cursor: not-allowed;
   }
 }

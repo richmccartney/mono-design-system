@@ -1,0 +1,20 @@
+---
+to: src/components/<%= name %>/<%= name %>.stories.tsx
+---
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import <%= name %>, { <%= name %>Props } from '.';
+import mdx from './<%= name %>.mdx';
+
+export default {
+  title: 'Components/<%= name %>',
+  args: { children: '<%= name %>' },
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
+  component: <%= name %>,
+} as Meta;
+
+export const Default: Story<<%= name %>Props> = (args) => <<%= name %> {...args} />;

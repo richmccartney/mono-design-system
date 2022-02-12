@@ -1,0 +1,13 @@
+---
+to: src/components/<%= name %>/<%= name %>.types.ts
+---
+export interface <%= name %>Props {
+  /** Optional prop to specify the ID used for testing */
+  testId?: string;
+
+  /** Optional prop to specify classNames onto <%= name %> */
+  className?: string;
+
+  /** Any additional props can be added where needed */
+  [props: string]: any;
+}

@@ -1,0 +1,45 @@
+---
+to: src/components/<%= name %>/<%= name %>.tsx
+---
+/**
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+import classNames from 'classnames';
+import React, { FunctionComponent } from 'react';
+import type { <%= name %>Props } from '.';
+
+import './<%= name %>.scss';
+
+/**
+ * <%= name %> component.
+ *
+ * @component
+ * @example
+ * return (
+ *   <<%= name %> />
+ * )
+ */
+
+const <%= name %>: FunctionComponent<<%= name %>Props> = ({
+  testId,
+  className,
+  ...props
+}) => {
+  const <%= name.toLowerCase() %>Classes = classNames({
+    'cds-<%= name %>': true,
+    [`${className}`]: className,
+  });
+  const commonProps = {
+    className: <%= name.toLowerCase() %>Classes,
+    'data-testid': testId,
+  };
+  return (
+    <p {...commonProps} {...props}>
+      AnExample
+    </p>
+  );
+};
+
+export default <%= name %>;

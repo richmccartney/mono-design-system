@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "modern-css-reset": "^1.3.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
     "postcss": "^8.0.0",
     "postcss-bem-linter": "^3.3.0",
     "postcss-reporter": "^6.0.1",
@@ -44,6 +44,8 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-suitcss": "^15.0.0",
     "stylelint-scss": "^3.18.0",
-    "stylelint-selector-bem-pattern": "^2.1.0"
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-prettier": "1.2.0"
   }
 }

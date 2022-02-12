@@ -3,4 +3,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export { default as Button } from './Button';
+import { ButtonSnippets } from './Button/Button.snippets';
+
+export default [
+  ...ButtonSnippets,
+];

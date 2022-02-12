@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "path": "./packages/react/dist/index.es.js",
+      "maxSize": "160kB"
+    },
+    {
+      "path": "./packages/react/dist/index.js",
+      "maxSize": "160kB"
+    },
+    {
+      "path": "./packages/react/dist/index.css",
+      "maxSize": "12kB"
+    },
+    {
+      "path": "./packages/styles/dist/css/style.css",
+      "maxSize": "48kB"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "font": {
     "family": {
-      "open-sans": {
-        "value": "Open Sans"
+      "inter": {
+        "value": "Inter"
       },
-      "base": { "value": "{font.family.open-sans.value}" }
+      "base": { "value": "{font.family.inter.value}" }
     }
   }
 }

@@ -1,0 +1,14 @@
+---
+to: src/components/<%= name %>/<%= name %>.test.ssr.tsx
+---
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+
+import { <%= name %> } from '..';
+
+describe('<<%= name %> /> Server-side rendering>', () => {
+  test(': renders on a server without crashing', () => {
+    const renderOnServer = () => renderToString(<<%= name %> />);
+    expect(renderOnServer).not.toThrow();
+  });
+});

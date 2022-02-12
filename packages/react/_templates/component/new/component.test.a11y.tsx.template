@@ -1,0 +1,24 @@
+---
+to: src/components/<%= name %>/<%= name %>.test.a11y.tsx
+---
+import React from 'react';
+import { render } from '@testing-library/react';
+
+import { <%= name %> } from '..';
+import { <%= name %>Props } from '.';
+
+import { axe, toHaveNoViolations } from 'jest-axe';
+expect.extend(toHaveNoViolations);
+
+describe('<<%= name %> />', () => {
+  const defaultProps: <%= name %>Props = {
+    testId: 'test-<%= name.toLowerCase() %>',
+  };
+
+  test(': should not have basic accessibility issues', async () => {
+    const { container } = render(<<%= name %> {...defaultProps} />);
+    const results = await axe(container);
+
+    expect(results).toHaveNoViolations();
+  });
+});

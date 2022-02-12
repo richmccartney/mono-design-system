@@ -1,0 +1,10 @@
+---
+to: src/components/<%= name %>/<%= name %>.scss
+---
+:root {
+  /* Custom properties go here */
+}
+
+.mono-<%= name %> {
+  /* Styles go here */
+}
