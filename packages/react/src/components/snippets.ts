@@ -5,6 +5,4 @@
 
 import { ButtonSnippets } from './Button/Button.snippets';
 
-export default [
-  ...ButtonSnippets,
-];
+export default [...ButtonSnippets];

@@ -7,5 +7,5 @@ export const ButtonSnippets = [
         Button
       </Button>
     `,
-  }
+  },
 ];
