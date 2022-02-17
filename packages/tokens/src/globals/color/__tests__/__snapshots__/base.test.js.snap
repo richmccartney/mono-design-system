@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Base color tokens : matches snapshot 1`] = `
+Object {
+  "color": Object {
+    "action": Object {
+      "primary": Object {
+        "value": "{color.primary.value}",
+      },
+      "secondary": Object {
+        "value": "{color.secondary.value}",
+      },
+      "tertiary": Object {
+        "value": "{color.base.gray.value}",
+      },
+    },
+    "base": Object {
+      "black": Object {
+        "value": "#000000",
+      },
+      "gray": Object {
+        "value": "#EFF1EE",
+      },
+      "green": Object {
+        "value": "#00FF00",
+      },
+      "red": Object {
+        "value": "#FF0000",
+      },
+      "white": Object {
+        "value": "#FFFFFF",
+      },
+    },
+    "primary": Object {
+      "value": "{color.brand.primary.value}",
+    },
+    "secondary": Object {
+      "value": "{color.brand.secondary.value}",
+    },
+  },
+}
+`;

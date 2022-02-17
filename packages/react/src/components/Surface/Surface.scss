@@ -1,0 +1,88 @@
+:root {
+  --Surface-backgroundColor: --color-base-white;
+  --Surface-textColor: --color-base-black;
+}
+
+.mono-Surface {
+  background-color: var(--Surface-backgroundColor);
+  color: var(--Surface-textColor);
+  padding: 24px;
+
+  &--backgroundPrimary {
+    --Surface-backgroundColor: var(--color-brand-primary);
+    --Surface-textColor: var(--color-brand-secondary);
+
+    // Dark mode support
+    [data-color-scheme='dark'] & {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+
+    @media screen and (prefer-color-scheme: dark) {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+  }
+
+  &--backgroundSecondary {
+    --Surface-backgroundColor: var(--color-brand-secondary);
+    --Surface-textColor: var(--color-brand-primary);
+
+    // Dark mode support
+    [data-color-scheme='dark'] & {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+
+    @media screen and (prefer-color-scheme: dark) {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+  }
+
+  &--backgroundGray {
+    --Surface-backgroundColor: var(--color-base-gray);
+
+    // Dark mode support
+    [data-color-scheme='dark'] & {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+
+    @media screen and (prefer-color-scheme: dark) {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+  }
+
+  &--backgroundWhite {
+    --Surface-backgroundColor: var(--color-base-white);
+
+    // Dark mode support
+    [data-color-scheme='dark'] & {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+
+    @media screen and (prefer-color-scheme: dark) {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+  }
+
+  &--backgroundBlack {
+    --Surface-backgroundColor: var(--color-base-black);
+    --Surface-textColor: var(--color-base-white);
+
+    // Dark mode support
+    [data-color-scheme='dark'] & {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+
+    @media screen and (prefer-color-scheme: dark) {
+      --Surface-backgroundColor: var(--color-brand-background-dark);
+      --Surface-textColor: var(--color-brand-base-dark);
+    }
+  }
+}

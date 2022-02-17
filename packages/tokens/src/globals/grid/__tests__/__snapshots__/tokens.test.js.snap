@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`grid tokens : matches snapshot 1`] = `
+Object {
+  "grid": Object {
+    "default": Object {
+      "columns": Object {
+        "value": "{grid.large.columns.value}",
+      },
+      "gutter": Object {
+        "value": "{grid.large.gutter.value}",
+      },
+      "margin": Object {
+        "value": "{grid.large.margin.value}",
+      },
+      "width": Object {
+        "value": "{grid.large.width.value}",
+      },
+    },
+    "large": Object {
+      "columns": Object {
+        "value": 12,
+      },
+      "gutter": Object {
+        "value": "{spacing.24.value}",
+      },
+      "margin": Object {
+        "value": "{spacing.24.value}",
+      },
+      "width": Object {
+        "value": "1280px",
+      },
+    },
+    "medium": Object {
+      "columns": Object {
+        "value": 12,
+      },
+      "gutter": Object {
+        "value": "{spacing.24.value}",
+      },
+      "margin": Object {
+        "value": "{spacing.40.value}",
+      },
+      "width": Object {
+        "value": "1024px",
+      },
+    },
+    "small": Object {
+      "columns": Object {
+        "value": 12,
+      },
+      "gutter": Object {
+        "value": "{spacing.24.value}",
+      },
+      "margin": Object {
+        "value": "{spacing.32.value}",
+      },
+      "width": Object {
+        "value": "768px",
+      },
+    },
+    "xsmall": Object {
+      "columns": Object {
+        "value": 12,
+      },
+      "gutter": Object {
+        "value": "{spacing.24.value}",
+      },
+      "margin": Object {
+        "value": "{spacing.24.value}",
+      },
+      "width": Object {
+        "value": "480px",
+      },
+    },
+  },
+}
+`;

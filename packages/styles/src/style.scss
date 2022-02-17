@@ -1,3 +1,32 @@
-@import '~mono-tokens/dist/web/mono/scss/tokens';
 @import '~modern-css-reset/dist/reset';
-@import 'components/Button.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  background-color: var(--color-base-background);
+  margin: 0;
+  padding: 0;
+
+  // Dark mode support
+  [data-color-scheme='dark'] & {
+    background-color: var(--color-brand-background-dark);
+  }
+
+  @media screen and (prefer-color-scheme: dark) {
+    background-color: var(--color-brand-background-dark);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headers);
+}

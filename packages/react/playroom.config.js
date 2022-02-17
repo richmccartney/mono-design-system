@@ -32,8 +32,8 @@ module.exports = {
           },
         },
         {
-          test: /\.pcss$/,
-          use: ['style-loader', 'css-loader', 'postcss-loader'],
+          test: /\.scss$/,
+          use: ['style-loader', 'css-loader', 'sass-loader'],
           include: __dirname,
         },
         {
@@ -45,6 +45,7 @@ module.exports = {
     },
     resolve: {
       extensions: ['.js', '.ts', '.tsx', '.css', '.scss'],
+      modules: ['node_modules'],
     },
   }),
 };

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`spacing tokens : matches snapshot 1`] = `
+Object {
+  "spacing": Object {
+    "128": Object {
+      "value": "128px",
+    },
+    "16": Object {
+      "value": "16px",
+    },
+    "24": Object {
+      "value": "24px",
+    },
+    "256": Object {
+      "value": "256px",
+    },
+    "32": Object {
+      "value": "32px",
+    },
+    "4": Object {
+      "value": "4px",
+    },
+    "40": Object {
+      "value": "40px",
+    },
+    "48": Object {
+      "value": "48px",
+    },
+    "64": Object {
+      "value": "64px",
+    },
+    "8": Object {
+      "value": "8px",
+    },
+    "96": Object {
+      "value": "96px",
+    },
+  },
+}
+`;

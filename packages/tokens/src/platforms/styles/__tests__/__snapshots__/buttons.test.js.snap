@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button tokens : matches snapshot 1`] = `
+Object {
+  "button": Object {
+    "height": Object {
+      "value": "40px",
+    },
+  },
+}
+`;

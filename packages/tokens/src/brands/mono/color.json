@@ -1,8 +1,26 @@
 {
   "color": {
+    "bright-green": {
+      "value": "#9BE36E"
+    },
+    "forest-green": {
+      "value": "#203207"
+    },
+    "forest-green-light": {
+      "value": "#4D5B39"
+    },
+    "night-green": {
+      "value": "#091201"
+    },
     "brand": {
-      "primary": { "value": "#3B5998" },
-      "secondary": { "value": "#4267B2" }
+      "primary": { "value": "{color.bright-green.value}" },
+      "secondary": { "value": "{color.forest-green.value}" },
+      "background": {
+        "dark": { "value": "{color.night-green.value}" }
+      },
+      "base": {
+        "dark": { "value": "{color.bright-green.value}" }
+      }
     }
   }
 }

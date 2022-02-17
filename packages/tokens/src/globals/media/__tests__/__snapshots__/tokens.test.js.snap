@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`media tokens : matches snapshot 1`] = `
+Object {
+  "media": Object {
+    "max-width": Object {
+      "lg": Object {
+        "value": "1280px",
+      },
+      "md": Object {
+        "value": "1024px",
+      },
+      "sm": Object {
+        "value": "768px",
+      },
+      "xs": Object {
+        "value": "480px",
+      },
+    },
+    "min-width": Object {
+      "lg": Object {
+        "value": "1024px",
+      },
+      "md": Object {
+        "value": "768px",
+      },
+      "sm": Object {
+        "value": "480px",
+      },
+      "xs": Object {
+        "value": "0",
+      },
+    },
+    "prefers-color-scheme": Object {
+      "dark": Object {
+        "value": "dark",
+      },
+      "light": Object {
+        "value": "light",
+      },
+    },
+    "prefers-reduced-motion": Object {
+      "value": "no-preference",
+    },
+  },
+}
+`;

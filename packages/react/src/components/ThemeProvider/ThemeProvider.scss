@@ -1,0 +1,32 @@
+@import '~mono-styles/dist/scss/style.scss';
+
+:root {
+  --ThemeProvider-backgroundColor: var(--color-base-white);
+  --ThemeProvider-color: var(--color-base-black);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.mono-ThemeProvider {
+  background-color: var(--ThemeProvider-backgroundColor);
+  color: var(--ThemeProvider-color);
+  min-height: 100%;
+
+  &--chrome,
+  &--mono {
+    // Dark mode support
+    &[data-color-scheme='dark'] {
+      --ThemeProvider-backgroundColor: var(--color-brand-background-dark);
+      --ThemeProvider-color: var(--color-brand-base-dark);
+    }
+
+    @media screen and (prefer-color-scheme: dark) {
+      --ThemeProvider-backgroundColor: var(--color-brand-background-dark);
+      --ThemeProvider-color: var(--color-brand-base-dark);
+    }
+  }
+}

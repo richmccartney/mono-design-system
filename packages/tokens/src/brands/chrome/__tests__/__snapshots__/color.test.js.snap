@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`color tokens : matches snapshot 1`] = `
+Object {
+  "color": Object {
+    "aubergine": Object {
+      "value": "#320707",
+    },
+    "aubergine-light": Object {
+      "value": "#5B3939",
+    },
+    "brand": Object {
+      "primary": Object {
+        "value": "{color.pink.value}",
+      },
+      "secondary": Object {
+        "value": "{color.aubergine.value}",
+      },
+    },
+    "pink": Object {
+      "value": "#FFD7EF",
+    },
+  },
+}
+`;

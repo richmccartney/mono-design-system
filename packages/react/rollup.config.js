@@ -15,6 +15,7 @@ export default [
   // CommonJS
   {
     input: 'src/index.ts',
+    inlineDynamicImports: true,
     output: {
       dir: 'dist',
       format: 'cjs',
@@ -53,6 +54,7 @@ export default [
   // ES Module
   {
     input: 'src/index.ts',
+    inlineDynamicImports: true,
     output: [
       {
         file: 'dist/index.es.js',

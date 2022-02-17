@@ -1,0 +1,26 @@
+{
+  "color": {
+    "pink": {
+      "value": "#FFD7EF"
+    },
+    "aubergine": {
+      "value": "#320707"
+    },
+    "aubergine-light": {
+      "value": "#5B3939"
+    },
+    "night-aubergine": {
+      "value": "#1A0202"
+    },
+    "brand": {
+      "primary": { "value": "{color.pink.value}" },
+      "secondary": { "value": "{color.aubergine.value}" },
+      "background": {
+        "dark": { "value": "{color.night-aubergine.value}" }
+      },
+      "base": {
+        "dark": { "value": "{color.pink.value}" }
+      }
+    }
+  }
+}

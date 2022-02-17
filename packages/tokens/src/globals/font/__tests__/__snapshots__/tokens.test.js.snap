@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`font tokens : matches snapshot 1`] = `
+Object {
+  "font": Object {
+    "family": Object {
+      "base": Object {
+        "value": "Inter, 'Helvetica Neue', sans",
+      },
+      "headers": Object {
+        "value": "Work Sans, 'Helvetica Neue', sans",
+      },
+    },
+    "size": Object {
+      "100": Object {
+        "value": "100px",
+      },
+      "108": Object {
+        "value": "108px",
+      },
+      "12": Object {
+        "value": "12px",
+      },
+      "14": Object {
+        "value": "14px",
+      },
+      "16": Object {
+        "value": "16px",
+      },
+      "18": Object {
+        "value": "18px",
+      },
+      "20": Object {
+        "value": "20px",
+      },
+      "24": Object {
+        "value": "24px",
+      },
+      "28": Object {
+        "value": "28px",
+      },
+      "32": Object {
+        "value": "32px",
+      },
+      "36": Object {
+        "value": "36px",
+      },
+      "40": Object {
+        "value": "40px",
+      },
+      "44": Object {
+        "value": "48px",
+      },
+      "48": Object {
+        "value": "48px",
+      },
+      "52": Object {
+        "value": "52px",
+      },
+      "56": Object {
+        "value": "56px",
+      },
+      "60": Object {
+        "value": "60px",
+      },
+      "64": Object {
+        "value": "64px",
+      },
+      "72": Object {
+        "value": "72px",
+      },
+      "76": Object {
+        "value": "76px",
+      },
+      "80": Object {
+        "value": "80px",
+      },
+      "84": Object {
+        "value": "84px",
+      },
+      "88": Object {
+        "value": "88px",
+      },
+      "default": Object {
+        "value": "16px",
+      },
+    },
+    "weight": Object {
+      "bold": Object {
+        "value": 700,
+      },
+      "medium": Object {
+        "value": 500,
+      },
+      "regular": Object {
+        "value": 400,
+      },
+    },
+  },
+}
+`;

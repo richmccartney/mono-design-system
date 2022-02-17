@@ -209,7 +209,7 @@ Other examples include `input`, `tab`, `nav` and `menu`.
 ### Prop naming
 
 All components should use a consistent props naming convention. This has yet to
-be properly defined for Cardano. For now, look at existing `props`.
+be properly defined for Mono. For now, look at existing `props`.
 
 We do have one tentative rule in place: always preface boolean props
 with is – `isHidden`, `isFullWidth` and so forth.
@@ -237,11 +237,11 @@ Rendering**(SSR). We use various tools to test our components including:
 - [Testing library](https://testing-library.com) + variants for component
   testing
 - Percy for automated visual regression testing
-- Cypress.io + demos for an end to end testing pages/web apps built with Cardano
+- Cypress.io + demos for an end to end testing pages/web apps built with Mono
 - AXE to automatically find and fix a subset of accessibility issues. True human
-  interaction will still be required to support testing Cardano.
+  interaction will still be required to support testing Mono.
 - Lighthouse to run performance, accessibility, progressive web apps and SEO
-  tests on pages built with Cardano components
+  tests on pages built with Mono components
 - Prettier (code formatting)
 - ESLint (used for linting that can’t be provided by any of the other tools)
 

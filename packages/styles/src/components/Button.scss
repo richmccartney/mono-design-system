@@ -1,24 +1,52 @@
 /** @define Button */
 // stylelint-disable-next-line
-@import '~mono-tokens/dist/web/mono/scss/tokens';
-
 :root {
-  --Button-color: #{$color-white};
-  --Button-background-color: #{color-black};
+  --Button-color: var(--color-brand-secondary);
+  --Button-backgroundColor: var(--color-brand-primary);
+  --Button-borderColor: unset;
+  --Button-borderRadius: 200px;
+  --Button-borderStyle: hidden;
+  --Button-borderWidth: 1px;
+  --Button-fontSize: var(--font-size-16);
+  --Button-fontWeight: var(--font-weight-medium);
+  --Button-paddingHorizontal: var(--spacing-24);
 }
 
 .mono-Button {
   appearance: none;
-  background-color: var(--Button-background-color);
+  background-color: var(--Button-backgroundColor);
+  border: var(--Button-borderWidth) var(--Button-borderStyle)
+    var(--Button-borderColor);
+  border-radius: var(--Button-borderRadius);
   color: var(--Button-color);
   display: inline-block;
+  font-size: var(--Button-fontSize);
+  font-weight: var(--Button-fontWeight);
+  height: 70px;
+  padding: 0 var(--Button-paddingHorizontal);
 
-  .mono-Button--isFullWidth {
+  &.mono-Button--isFullWidth {
     display: block;
     width: 100%;
   }
 
-  .mono-Button--isDisabled {
+  &.mono-Button--isDisabled {
     cursor: not-allowed;
+  }
+
+  &.mono-Button--onPrimaryBackground {
+    --Button-color: var(--color-brand-primary);
+    --Button-backgroundColor: var(--color-brand-secondary);
+
+    // Dark mode support
+    [data-color-scheme='dark'] & {
+      --Button-color: var(--color-brand-secondary);
+      --Button-backgroundColor: var(--color-brand-primary);
+    }
+
+    @media screen and (prefer-color-scheme: dark) {
+      --Button-color: var(--color-brand-secondary);
+      --Button-backgroundColor: var(--color-brand-primary);
+    }
   }
 }

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`elevation tokens : matches snapshot 1`] = `
+Object {
+  "elevation": Object {
+    "deep": Object {
+      "value": "-999999",
+    },
+    "default": Object {
+      "value": "1",
+    },
+    "dropdown": Object {
+      "value": "600",
+    },
+    "header": Object {
+      "value": "400",
+    },
+    "mask": Object {
+      "value": "200",
+    },
+    "masked": Object {
+      "value": "100",
+    },
+    "modal": Object {
+      "value": "900",
+    },
+    "overlay": Object {
+      "value": "700",
+    },
+    "popup": Object {
+      "value": "950",
+    },
+    "spinner": Object {
+      "value": "800",
+    },
+    "sticky": Object {
+      "value": "300",
+    },
+    "toast": Object {
+      "value": "500",
+    },
+  },
+}
+`;

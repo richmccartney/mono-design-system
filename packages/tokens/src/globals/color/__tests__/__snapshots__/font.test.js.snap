@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Font color tokens : matches snapshot 1`] = `
+Object {
+  "color": Object {
+    "font": Object {
+      "base": Object {
+        "value": "{color.base.black.value}",
+      },
+      "primary": Object {
+        "value": "{color.primary.value}",
+      },
+      "secondary": Object {
+        "value": "{color.secondary.value}",
+      },
+      "tertiary": Object {
+        "value": "{color.base.gray.value}",
+      },
+    },
+  },
+}
+`;

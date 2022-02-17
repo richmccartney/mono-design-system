@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`motion tokens : matches snapshot 1`] = `
+Object {
+  "motion": Object {
+    "duration": Object {
+      "fast": Object {
+        "value": ".15s",
+      },
+      "medium": Object {
+        "value": ".3s",
+      },
+      "slow": Object {
+        "value": ".6s",
+      },
+    },
+    "ease": Object {
+      "in": Object {
+        "value": "cubic-bezier(.4, 0, .7, .2)",
+      },
+      "inout": Object {
+        "value": "cubic-bezier(.4, 0, .2, 1)",
+      },
+      "out": Object {
+        "value": "cubic-bezier(0, 0, .2, 1)",
+      },
+    },
+  },
+}
+`;

@@ -25,6 +25,7 @@
     "lint:eslint:fix": "eslint . --fix",
     "lint:eslint:ci": "eslint . --max-warnings 0",
     "start": "yarn start:storybook",
+    "start:playroom": "lerna run playroom --stream",
     "start:storybook": "lerna run storybook --stream",
     "test": "lerna run test",
     "release": "multi-semantic-release",

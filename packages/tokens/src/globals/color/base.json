@@ -1,10 +1,20 @@
 {
   "color": {
-    "black": {
-      "value": "#000000"
+    "base": {
+      "white": { "value": "#FFFFFF" },
+      "black": { "value": "#000000" },
+      "gray": {
+        "value": "#EFF1EE"
+      },
+      "red": { "value": "#FF0000" },
+      "green": { "value": "#00FF00" }
     },
-    "white": {
-      "value": "#FFFFFF"
+    "primary": { "value": "{color.brand.primary.value}" },
+    "secondary": { "value": "{color.brand.secondary.value}" },
+    "action": {
+      "primary": { "value": "{color.primary.value}" },
+      "secondary": { "value": "{color.secondary.value}" },
+      "tertiary": { "value": "{color.base.gray.value}" }
     }
   }
 }

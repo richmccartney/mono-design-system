@@ -28,7 +28,7 @@ const <%= name %>: FunctionComponent<<%= name %>Props> = ({
   ...props
 }) => {
   const <%= name.toLowerCase() %>Classes = classNames({
-    'cds-<%= name %>': true,
+    'mono-<%= name %>': true,
     [`${className}`]: className,
   });
   const commonProps = {
