@@ -65,7 +65,7 @@
     "lerna": "^3.22.1",
     "multi-semantic-release": "^2.4.7",
     "prettier": "^2.2.1",
-    "semantic-release": "^17.2.2"
+    "semantic-release": "^19.0.3"
   },
   "husky": {
     "hooks": {
