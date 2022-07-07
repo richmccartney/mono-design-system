@@ -1,3 +1,20 @@
+# mono-react-components [1.1.0-next.1](https://github.com/richmccartney/mono-test/compare/mono-react-components@1.0.1...mono-react-components@1.1.0-next.1) (2022-07-07)
+
+
+### Features
+
+* adding fullWidth prop and classes ([fe75f07](https://github.com/richmccartney/mono-test/commit/fe75f07235094858a429ac88047fc905b1425f22))
+* bundling SCSS output with React components package ([b7c2d7f](https://github.com/richmccartney/mono-test/commit/b7c2d7f5ebc104b620201f392d76ee03e6cb560a))
+* bundling SCSS output with React components package ([a6066bf](https://github.com/richmccartney/mono-test/commit/a6066bf169919c3efadbfbaad0d53a0cf1e5ac9a))
+
+
+
+
+
+### Dependencies
+
+* **mono-styles:** upgraded to 2.1.0-next.1
+
 # mono-react-components [1.1.0-next.1](https://github.com/richmccartney/mono-test/compare/mono-react-components@1.0.1-next.1...mono-react-components@1.1.0-next.1) (2020-12-09)
 
 
